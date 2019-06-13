@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'FamousIcons';
+    src: url('font/FamousIcons.woff2') format('woff2'), /* Modern Browsers */
+         url('font/FamousIcons.otf') format('opentype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+}
+
+.if {
+    font: normal normal normal 14px/1 FamousIcons;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+     display: inline-block;
+}
+
+/* makes the font 33% larger relative to the icon container */
+.if-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+
+.if-2x {
+  font-size: 2em;
+}
+
+.if-3x {
+  font-size: 3em;
+}
+
+.if-4x {
+  font-size: 4em;
+}
+
+.if-5x {
+  font-size: 5em;
+}
+
+.if-spin  {
+  animation: spin 2s infinite linear;
+}
+
+.if-pulse {
+  animation: spin 1s infinite steps(8);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+.if-famousui:before {
+    content: "\0001";
+}
+
+.if-famousis:before {
+    content: "\0002";
+}
+
+.if-boomcdn:before {
+    content: "\0003";
+}
+
+.if-liwebdesign:before {
+    content: "\0004";
+}
+
+.if-longisland:before {
+    content: "\0005";
+}
+
+.if-bell:before {
+    content: "\0006";
+}
+
+.if-phone:before {
+    content: "\0007";
+}
+.if-cellphone:before {
+    content: "\0008";
+}
+.if-chat:before {
+    content: "\0090";
+}
+.if-message:before {
+    content: "\0010";
+}
+.if-close:before {
+    content: "\0011";
+}
+.if-dashboard:before {
+    content: "\0012";
+}
+.if-download:before {
+    content: "\0013";
+}
+.if-upload:before {
+    content: "\0014";
+}
+.if-email:before {
+    content: "\0015";
+}
+.if-user:before {
+    content: "\0016";
+}
+.if-admin:before {
+    content: "\0017";
+}
+.if-users:before {
+    content: "\0018";
+}
+.if-adminusers:before {
+    content: "\0019";
+}
+.if-play:before {
+    content: "\0021";
+}
+.if-stop:before {
+    content: "\0022";
+}
+.if-pause:before {
+    content: "\0023";
+}
+.if-facebook:before {
+    content: "\0024";
+}
+.if-intagram:before {
+    content: "\0025";
+}
+.if-twitter:before {
+    content: "\0026";
+}
+.if-linkedin:before {
+    content: "\0027";
+}
+.if-menu:before {
+    content: "\0028";
+}
+.if-location:before {
+    content: "\0029";
+}

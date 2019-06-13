@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'FamousIcons';
-  src: url("font/FamousIcons.woff2") format("woff2"), url("font/FamousIcons.otf") format("opentype");
+  src: url("iconfamous.woff2") format("woff2"), url("iconfamous.otf") format("opentype");
   /* Safari, Android, iOS */
   font-style: normal;
   font-weight: normal; }

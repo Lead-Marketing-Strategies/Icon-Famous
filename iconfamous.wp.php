@@ -1,7 +1,7 @@
 <?
 // WP Generator
 
-require_once("../famousiconswp/wp-load.php");
+require_once("../../../../wp-load.php");
 
 $file = file_get_contents("iconfamous.nam");
 $list = explode(PHP_EOL, $file);
@@ -15,7 +15,16 @@ $term = get_term_by('name', 'Web Application', 'icon_category');
 //echo $term->term_id;
 
 //clear old posts
-/*
+
+$allposts= get_posts( array(
+  'post_type'=>'icon',
+  'numberposts'=>-1,
+  "post_status" => "publish"
+) );
+foreach ($allposts as $eachpost) {
+wp_delete_post( $eachpost->ID, true );
+}
+
 $allposts= get_posts( array(
   'post_type'=>'icon',
   'numberposts'=>-1,
@@ -24,8 +33,8 @@ $allposts= get_posts( array(
 foreach ($allposts as $eachpost) {
 wp_delete_post( $eachpost->ID, true );
 }
-die();
-*/
+
+
 
 //print_r($list);
 foreach($list as $index => $line){
@@ -65,11 +74,13 @@ foreach($list as $index => $line){
         $icon["ID"] = $icons[0]->ID;
       }
 
-    $post_id = wp_insert_post($icon);
-    wp_set_object_terms( $post_id, $term->term_id, 'icon_category' );
-    update_post_meta( $post_id, 'class', "if if-".$shortname, true );
-    update_post_meta( $post_id, 'unicode', $unicode, true );
-    echo "Added: ".$fullname."<br>";
+    if($unicode){
+      $post_id = wp_insert_post($icon);
+      wp_set_object_terms( $post_id, $term->term_id, 'icon_category' );
+      update_post_meta( $post_id, 'class', "if if-".$shortname, true );
+      update_post_meta( $post_id, 'unicode', $unicode, true );
+      echo "Added: ".$fullname."<br>";
+    }
 
     // add function to clear non existing from WP
 

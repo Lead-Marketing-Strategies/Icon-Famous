@@ -1,9 +1,15 @@
 famousui
 famousis
+iconfamous
 boomcdn
 liwebdesign
 longisland
-@.ai
+at.ai
+facebook
+twitter
+linkedin
+admin-user
+admin-users
 Address book-o.ai
 Address book.ai
 Address card.ai

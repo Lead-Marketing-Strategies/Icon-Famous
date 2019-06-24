@@ -119,7 +119,7 @@ $enc_data = implode(PHP_EOL, $enc_lines);
 file_put_contents("iconfamous.enc", $enc_header.$enc_data);
 
 $css_data = implode(PHP_EOL, $css_lines);
-file_put_contents("iconfamous.css", $css_header.$css_data);
+file_put_contents("css/iconfamous.css", $css_header.$css_data);
 
 $nam_data = implode(PHP_EOL, $nam_lines);
 echo str_replace(PHP_EOL, "<br>", $nam_header.$nam_data);

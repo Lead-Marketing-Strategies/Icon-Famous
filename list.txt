@@ -9,7 +9,7 @@ Address book.ai
 Address card.ai
 Adjust.ai
 Area chart.ai
-Arrow lsft right.ai
+Arrow left right.ai
 Arrow up down.ai
 Arrows.ai
 Asl interpreting.ai
@@ -54,12 +54,12 @@ Bullhorn.ai
 Bus.ai
 Cab.ai
 Calculator.ai
-calender cross.ai
-Calender e.ai
-calender f.ai
-calender minus.ai
-calender plus.ai
-calender tick.ai
+calendar cross.ai
+calendar e.ai
+calendar f.ai
+calendar minus.ai
+calendar plus.ai
+calendar tick.ai
 camera retro.ai
 camera.ai
 car.ai
@@ -97,10 +97,10 @@ Comment o dots.ai
 comment o.ai
 comments o.ai
 Comments.ai
-Commet.ai
+Comment.ai
 Compass.ai
 Copyright.ai
-Crearive community.ai
+Creative community.ai
 credit card o.ai
 credit card.ai
 crop.ai
@@ -125,7 +125,7 @@ Envelop open o.ai
 Envelop open.ai
 envelop-o.ai
 Envelop.ai
-Envlop square.ai
+Envelope square.ai
 Eraser.ai
 Exchange.ai
 exclamation circle.ai
@@ -139,7 +139,7 @@ Eyedropper.ai
 Fax.ai
 Feed.ai
 Fighter jet.ai
-File Archieve.ai
+File Archive.ai
 file audio.ai
 File code.ai
 File excel.ai
@@ -154,7 +154,7 @@ File word.ai
 File zip.ai
 film.ai
 Filter.ai
-fire exhuts.ai
+fire exhaust.ai
 Fire.ai
 flag checkered.ai
 flag o.ai
@@ -163,7 +163,7 @@ flash o.ai
 flash.ai
 flask empty.ai
 flask.ai
-flawn.ai
+frown.ai
 folder o.ai
 folder open o.ai
 folder open.ai
@@ -180,13 +180,10 @@ glass.ai
 globe.ai
 graduation.ai
 group.ai
-hand grap o.ai
-hand grap o(1).ai
 hand lizard-o.ai
 hand paper o.ai
 hand peace o.ai
 hand pointer o.ai
-hand pointer o(1).ai
 hand rock o.ai
 hand scissor o.ai
 hand shake o.ai
@@ -223,14 +220,13 @@ justice.ai
 Key.ai
 Keyboard.ai
 Language.ai
-LAptop.ai
+Laptop.ai
 Leaf.ai
 lemon o.ai
 level down.ai
 level up.ai
 License-o.ai
 License.ai
-life bouy.ai
 life buoy.ai
 life ring.ai
 life saver.ai
@@ -256,7 +252,6 @@ minus square o.ai
 minus square.ai
 minus.ai
 mobile phone.ai
-mobile.ai
 money.ai
 moon o.ai
 moon.ai
@@ -302,9 +297,7 @@ registered.ai
 remove.ai
 reorder.ai
 reply all.ai
-reply all(1).ai
 reply.ai
-reply(1).ai
 retweet.ai
 road.ai
 rocket.ai
@@ -323,7 +316,7 @@ share square.ai
 share.ai
 shield.ai
 ship.ai
-shoping cart.ai
+shopping cart.ai
 shopping bag.ai
 shopping basket.ai
 shower.ai
@@ -336,7 +329,7 @@ sitemap.ai
 slider.ai
 smile o.ai
 snowflake.ai
-soccerr ball o.ai
+soccer ball o.ai
 sort A to Z  des.ai
 sort A to Z asc.ai
 sort amount asc.ai
@@ -350,7 +343,7 @@ sort up.ai
 sort.ai
 space shuttle.ai
 spinner.ai
-spone.ai
+spoon.ai
 square check.ai
 square o.ai
 square.ai
@@ -372,8 +365,8 @@ tasks.ai
 taxi.ai
 television.ai
 terminal.ai
-theremometer quarter.ai
-theremometer.ai
+thermometer quarter.ai
+thermometer.ai
 thermometer full.ai
 thermometer half.ai
 thermometer three quarter.ai
@@ -423,8 +416,8 @@ video camera.ai
 volume control phone.ai
 volume off.ai
 volume up.ai
-vvolume down.ai
-waraning.ai
+volume down.ai
+warning.ai
 wheel chair alt.ai
 wheel chair.ai
 wifi.ai

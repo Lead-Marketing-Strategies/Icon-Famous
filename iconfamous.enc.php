@@ -1,10 +1,11 @@
 <?
 $file = file_get_contents(__DIR__."/list.txt");
 $list = explode(PHP_EOL, $file);
-sort($list);
+natcasesort($list);
 
 $icons = [];
-$lines = [];
+$enc_lines = [];
+$nam_lines = [];
 $index = 1;
 
 ob_start();?>
@@ -14,7 +15,14 @@ ob_start();?>
 %%Release: <?=date("Y-m-d").PHP_EOL?>
 %
 <?
-$header = ob_get_contents();
+$enc_header = ob_get_contents();
+ob_end_clean();
+
+ob_start();?>
+%%FONTLAB NAMETABLE: Icon Famous
+
+<?
+$nam_header = ob_get_contents();
 ob_end_clean();
 
 
@@ -27,12 +35,17 @@ foreach($list as $icon){
   $name = str_replace(' ', '-', $line);
   if(!empty($name)){
     $icons[] = $name;
-    $lines[] = $name . " " . $index;
+    $enc_lines[] = $name . " " . $index;
+    $nam_lines[] = "0x" . sprintf('%04d', $index) . " " . $name;
     $index++;
   }
 }
 
 
-$data = implode(PHP_EOL, $lines);
-echo str_replace(PHP_EOL, "<br>", $header.$data);
-file_put_contents("iconfamous.enc", $header.$data);
+$enc_data = implode(PHP_EOL, $enc_lines);
+//echo str_replace(PHP_EOL, "<br>", $enc_header.$enc_data);
+file_put_contents("iconfamous.enc", $enc_header.$enc_data);
+
+$nam_data = implode(PHP_EOL, $nam_lines);
+echo str_replace(PHP_EOL, "<br>", $nam_header.$nam_data);
+file_put_contents("iconfamous.nam", $nam_header.$nam_data);

@@ -1,9 +1,11 @@
-famousui
-famousis
-iconfamous
-boomcdn
-liwebdesign
-longisland
+famous-ui
+famous-ui-o
+famous-internet-solutions
+icon-famous
+icon-famous-o
+boom-cdn
+long-island-webdesign
+long-island
 at.ai
 facebook
 twitter
@@ -155,7 +157,6 @@ file pdf.ai
 file photo.ai
 file picture.ai
 File powerpoint.ai
-File video.ai
 File word.ai
 File zip.ai
 film.ai
@@ -234,8 +235,6 @@ level up.ai
 License-o.ai
 License.ai
 life buoy.ai
-life ring.ai
-life saver.ai
 lightbulb o.ai
 line chart.ai
 location arrow.ai
@@ -245,7 +244,6 @@ low vision.ai
 magic.ai
 magnet.ai
 male.ai
-map marker.ai
 map o.ai
 map sign.ai
 map.ai
@@ -308,7 +306,6 @@ retweet.ai
 road.ai
 rocket.ai
 rss square.ai
-Rss.ai
 search minus.ai
 search plus.ai
 search.ai
@@ -342,10 +339,8 @@ sort amount asc.ai
 sort amount dsc.ai
 sort asc.ai
 sort des.ai
-sort down.ai
 sort numeric asc.ai
 sort numeric dsc.ai
-sort up.ai
 sort.ai
 space shuttle.ai
 spinner.ai

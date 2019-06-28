@@ -7,7 +7,13 @@ $icons = [];
 $enc_lines = [];
 $nam_lines = [];
 $css_lines = [];
-$index = 1;
+$index_lines = [];
+$index_2_lines = [];
+$index_3_lines = [];
+$index_4_lines = [];
+$index_spin_lines = [];
+$index_pulse_lines = [];
+$index = 5000;
 
 ob_start();?>
 %%FONTLAB ENCODING: 1; Icon Famous
@@ -87,6 +93,34 @@ ob_start();?>
 $css_header = ob_get_contents();
 ob_end_clean();
 
+ob_start();?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+  <meta content="en-us" http-equiv="Content-Language" />
+  <title>Famous Icons Regular - Web Font Specimen</title>
+  <link rel="stylesheet" type="text/css" href="css/iconfamous.css" />
+</head>
+
+<body>
+<?
+$index_header = ob_get_contents();
+ob_end_clean();
+
+
+ob_start();?>
+</body>
+</html>
+<?
+$index_footer = ob_get_contents();
+ob_end_clean();
+
+$break_lines = [
+  '<br />',
+  '<br />'
+];
 
 // remove comments, format names
 foreach($list as $icon){
@@ -99,6 +133,12 @@ foreach($list as $icon){
     $icons[] = $name;
     $enc_lines[] = $name . " " . $index;
     $nam_lines[] = "0x" . sprintf('%04d', $index) . " " . $name;
+    $index_lines[] = '<i class="if if-' . $name . '"></i>';
+    $index_2_lines[] = '<i class="if if-2x if-' . $name . '"></i>';
+    $index_3_lines[] = '<i class="if if-3x if-' . $name . '"></i>';
+    $index_4_lines[] = '<i class="if if-4x if-' . $name . '"></i>';
+    $index_spin_lines[] = '<i class="if if-spin if-' . $name . '"></i>';
+    $index_pulse_lines[] = '<i class="if if-pulse if-' . $name . '"></i>';
 
     ob_start();?>
     .if-<?=$name?>:before {
@@ -124,3 +164,17 @@ file_put_contents("css/iconfamous.css", $css_header.$css_data);
 $nam_data = implode(PHP_EOL, $nam_lines);
 echo str_replace(PHP_EOL, "<br>", $nam_header.$nam_data);
 file_put_contents("iconfamous.nam", $nam_header.$nam_data);
+
+$index_data = implode(PHP_EOL,
+array_merge(
+  $index_lines,
+  $break_lines,
+  $index_2_lines,
+  $break_lines,
+  $index_3_lines,
+  $break_lines,
+  $index_spin_lines,
+  $break_lines,
+  $index_pulse_lines
+));
+file_put_contents("index.html", $index_header.$index_data.$index_footer);
